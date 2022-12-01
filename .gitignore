@@ -7,3 +7,5 @@ test.py
 count.txt
 R_W_to_file.py
 .DS_Store
+curr_dir.py
+setup.sh
