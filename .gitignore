@@ -1,0 +1,9 @@
+env
+__pycache__
+linkedin_login.py
+links.py
+linkedin.py
+test.py
+count.txt
+R_W_to_file.py
+.DS_Store
