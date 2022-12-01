@@ -26,9 +26,8 @@ pip install -r ./requirements.txt
 
 ## How to use
 
-Change into the direcory and run: 
+Stay in (env) run or Change into the direcory and run: 
 
-Stay in (env) run
 ```bash
 source env/bin/activate
 ```
