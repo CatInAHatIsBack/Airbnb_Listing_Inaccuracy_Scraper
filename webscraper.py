@@ -35,7 +35,7 @@ def choose_time():
 
 def filters():
     #site-content > div.f15dgkuj.dir.dir-ltr > div.p14tze6r.pj16vlp.dir.dir-ltr > div > div > div > div.b1a88q73.dir.dir-ltr > button
-    filter_button = browser.find_element(By.CSS_SELECTOR, '#site-content > div.fhusglq.dir.dir-ltr > div.p1lc3mon.p14tze6r.dir.dir-ltr > div > div > div > div.b1a88q73.dir.dir-ltr > button')
+    filter_button = browser.find_element(By.CSS_SELECTOR, '#categoryScroller > div > div > div.f14wfpb5.dir.dir-ltr > div > div > button')
     filter_button.click()
 
 
@@ -93,8 +93,8 @@ def next_page():
         if len(data) > 0:
             for i in data:
                 listings.append(i)
-        next_button = browser.find_element(By.CSS_SELECTOR, '._1bfat5l')
-        next_button.click()
+            next_button = browser.find_element(By.CSS_SELECTOR, '._1bfat5l')
+            next_button.click()
         time.sleep(2)
     print(listings)
     df = pd.DataFrame(listings)

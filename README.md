@@ -26,12 +26,7 @@ pip install -r ./requirements.txt
 
 ## How to use
 
-Stay in (env) run or Change into the direcory and run: 
-
-```bash
-source env/bin/activate
-```
-Then run:
+run
 ```bash
 python3 -i webscraper.py 
 ```
