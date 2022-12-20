@@ -32,6 +32,6 @@ python3 -i webscraper.py
 ```
 Then you can run:
 ```bash
-start("bali")
+start("india")
 ```
 

@@ -59,6 +59,10 @@ def set_limit(price, path):
     path.send_keys(Keys.BACKSPACE)
     path.send_keys(Keys.BACKSPACE)
     path.send_keys(Keys.BACKSPACE)
+    path.send_keys(Keys.BACKSPACE)
+    path.send_keys(Keys.BACKSPACE)
+    path.send_keys(Keys.BACKSPACE)
+    path.send_keys(Keys.BACKSPACE)
     path.send_keys(price) 
 
 def start(dest):
@@ -93,8 +97,10 @@ def next_page():
         if len(data) > 0:
             for i in data:
                 listings.append(i)
-            next_button = browser.find_element(By.CSS_SELECTOR, '._1bfat5l')
-            next_button.click()
+                # if (page_len > 1)
+                if (page_len > 1 ):
+                    next_button = browser.find_element(By.CSS_SELECTOR, '._1bfat5l')
+                    next_button.click()
         time.sleep(2)
     print(listings)
     df = pd.DataFrame(listings)
